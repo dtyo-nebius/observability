@@ -345,7 +345,7 @@ var NebiusObjectStorage = dashboard.NewDashboardBuilder("Nebius Object Storage")
 			RefId("A"),
 		).
 		WithTarget(prometheus.NewDataqueryBuilder().
-			Expr(`-sum by (storage_class) (rate(lifecycle_transition_network_bytes{bucket=~"$bucket", direction="traffic-out"}[1m])) > 0`).
+			Expr(`-sum by (storage_class) (rate(lifecycle_transition_network_bytes{bucket=~"$bucket", direction="traffic-out"}[1m])) < 0`).
 			LegendFormat("{{bucket}} download from {{storage_class}}").
 			RefId("B"),
 		).

@@ -611,7 +611,7 @@
           "refId": "A"
         },
         {
-          "expr": "-sum by (storage_class) (rate(lifecycle_transition_network_bytes{bucket=~\"$bucket\", direction=\"traffic-out\"}[1m])) \u003e 0",
+          "expr": "-sum by (storage_class) (rate(lifecycle_transition_network_bytes{bucket=~\"$bucket\", direction=\"traffic-out\"}[1m])) \u003c 0",
           "legendFormat": "{{bucket}} download from {{storage_class}}",
           "refId": "B"
         }
