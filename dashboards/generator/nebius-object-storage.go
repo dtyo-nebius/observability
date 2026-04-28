@@ -306,7 +306,7 @@ var NebiusObjectStorage = dashboard.NewDashboardBuilder("Nebius Object Storage")
 			RefId("A"),
 		).
 		Unit(units.BytesIEC).
-		FillOpacity(70).
+		FillOpacity(5).
 		ShowPoints(common.VisibilityModeNever).
 		Thresholds(dashboard.NewThresholdsConfigBuilder()).
 		Height(8).

@@ -544,7 +544,7 @@
             "steps": []
           },
           "custom": {
-            "fillOpacity": 70,
+            "fillOpacity": 5,
             "showPoints": "never"
           }
         },
